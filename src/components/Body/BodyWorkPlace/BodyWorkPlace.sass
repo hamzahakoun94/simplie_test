@@ -1,0 +1,120 @@
+@import "./src/style"
+
+    
+#wPtagGroup
+  position: relative
+  width: 100%
+  height: 100%
+  #wp_mode
+    position: absolute
+    width: 10rem
+    height: 2.6rem
+    display: none
+    right: 0rem
+    top: 0rem
+    
+  #modeFullSize_Wp
+    border-radius: 2rem 0rem 0rem 2rem
+
+  #modeSplited_Wp
+    border-radius: 0rem 2rem 2rem 0rem
+    float: right
+
+  .btn_Wp_Mode
+    font-family: $font-Icon
+    font-size: 2.5rem
+    color: $color-cream
+    background: $color-blue-a
+    width: 4.9rem
+    height: 2.2rem
+    line-height: 0%
+    text-align: center
+    outline: none
+    border: none
+    cursor: pointer
+    user-select: none
+
+    
+    &:hover
+      color: $color-black
+      background-color: $color-orange
+
+  .wp_active
+    @include active(white, 1)
+   
+
+
+  .wpContainer
+    right: 0rem
+    top: 2.5rem
+    bottom: 0rem
+    left: 0rem
+    display: inline-block
+    position: absolute
+    background-color: $color-blue-a
+    padding: 1rem
+    display: none
+    overflow-y: scroll
+
+
+  #btn-B_TagForm
+  #btn-B_TagPaper
+  #btn-B_TagPop-up
+  #btn-B_TagFilter
+  .builderTag, 
+    @include btn-Tag(10rem, none)
+    
+
+  #wb_Container_holder
+    position: relative
+    display: block
+    height: auto
+    margin-bottom: 1rem
+    
+  .containerTag
+    @include btn-Tag("", inline-flexbox)
+    padding-left: 2rem
+    padding-right: 2rem
+    max-width: 100%
+    height: auto
+    position: relative
+
+  
+
+
+  .wp_Element_Container
+    right: 0rem
+    left: 0rem
+    display: inline-flexbox
+    position: relative
+    border: .3rem $color-blue-a
+    border-style: solid
+    background-color: white
+    padding: .5rem
+    min-height: 1%
+    max-height: 100%
+
+    
+  .active
+    @include active(white, 5)
+    filter: drop-shadow(.5rem .5rem .3rem $color-gray-a)
+
+  .colDiv
+    
+    border: solid
+    border-width: .7rem
+    display: inline-block
+    right: 0px
+    left: 0px
+    overflow: auto
+    cursor: w-resize
+
+    position: relative
+    max-height: 5rem
+    min-height: 3rem
+    min-width: 20%
+    max-width: 100% 
+    resize: horizontal
+
+
+  

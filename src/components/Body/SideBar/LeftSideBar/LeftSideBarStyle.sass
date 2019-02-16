@@ -1,0 +1,78 @@
+@import "./src/style"
+
+.sideBarGroup
+  width: 100%
+
+.l_SidebarButton,
+.elementContainer, 
+  top: .5rem
+  color: $color-cream
+  background: $color-blue-a  
+  position: relative
+  cursor: pointer
+  width: 93%
+  left: .6rem
+  height: 3.4rem
+  border-radius: 2.5rem
+  margin-top:   .5rem
+  border: none
+  outline: none
+  &:hover
+   color: $color-black
+   background: $color-orange
+
+.sB_Titel
+  position: relative
+  cursor: default
+  display: inline-block
+  width: 100%
+  height: 3.5rem
+  color: $color-cream
+  background: $color-gray-b
+  font-family: $font-Arial
+  line-height: 220%
+  font-size: 1.6rem
+  border: none
+  text-align: center
+  outline: none
+  user-select: none
+
+
+.active
+  @include active($color-orange, 1)
+  
+   
+.symbol-btn_4
+  font-family: $font-Icon
+  font-size: 3rem
+  color: $color-gray-c
+  background: $color-cream
+  border-width: .1rem
+  position: absolute
+  width: 3.8rem
+  height: 3rem
+  text-align: center
+  left: 1rem
+  line-height: 100%
+  top: .2rem
+  outline: none
+  border-radius: 2rem 0rem 2rem 0rem
+  user-select: none
+
+
+.btn-Text
+  font-family: $font-Arial
+  left: .2rem
+  text-align: left
+  position: relative
+  line-hight: 100%
+  font-size: 1.4rem
+  float: left
+  width: 10rem
+  padding-left: 4.5rem
+  user-select: none
+
+
+.sB_Btn_Group
+  display: none
+  

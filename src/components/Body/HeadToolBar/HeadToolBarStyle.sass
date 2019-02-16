@@ -1,0 +1,120 @@
+@import "./src/style"
+  
+.form_group
+  z-index: 1
+  top: .5rem
+  height: 6.4rem
+  position: relative
+  background: $color-cream
+  box-shadow: .2rem 0rem .5rem $color-gray-a
+  user-select: none
+  float: left
+  margin: none
+  margin-right:  .4rem
+
+.symbol-btn
+  @include symbol-btn(2.3rem)
+  border: none
+  width: 1.8rem
+  height: 1.8rem
+  padding-left: 1rem
+  background: transparent
+  &:hover
+    color: $color-black
+
+
+.symbol-btn_2
+  @include symbol-btn(3.2rem)
+  top: 1.6rem
+  width: 3.2rem
+  height: 3.2rem
+
+.symbol-btn_3
+  @include symbol-btn(3.2rem)
+  top: .5rem
+  position: relative
+  width: 5.5rem
+  height: 5.5rem
+  margin-right: 1rem
+  margin-left:  1rem
+
+
+
+.symbol-btn-Borderd
+  @include symbol-btn(1.8rem)
+  width: 1.8rem
+  height: 1.8rem
+
+
+
+.icon_1
+  font-family: $font-Icon
+  font-size: 4rem
+  top: 3.8rem
+  color: $color-gray-b
+  position: absolute
+  cursor: default
+  line-height: 0%
+  border: none
+  width: 2.4rem
+  height: 2.4rem
+  text-align: center
+  padding: 0rem
+  margin: 0rem
+  background: transparent
+  outline: none
+
+.btn-Preview
+  font-family: $font-Arial
+  font-size: 1.2rem
+  font-weight: bold
+  color: $color-gray-c
+  border: .1rem
+  border-color: $color-gray
+  background-color: $color-cream
+  border-style: solid
+  width: 6rem
+  height: 2rem
+  position: absolute
+  cursor: default
+  outline: none
+
+
+
+
+.active-btn
+  @include active($color-orange, 1)
+  
+
+
+.tool_group_title
+  font-family: $font-Arial
+  font-size: 1.2rem
+  font-weight: bold
+  color: $color-gray-c
+  position: absolute
+  cursor: default
+
+.groupTitel
+  top: .2rem
+  left: 0rem
+  width: 100%
+  text-align: center
+
+.titleText
+ font-family: $font-Arial
+ font-size: 1rem
+ font-weight: bold
+ top: .8rem
+ position: absolute
+ width: 5.5rem
+ left: 0rem
+
+  
+.titleSymbol
+  top: 1rem
+  font-family: $font-Icon
+  font-size: 5rem
+  text-align: center
+  position: relative
+

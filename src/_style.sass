@@ -1,0 +1,96 @@
+
+html
+    font-size: 62.5%   
+
+ 
+    
+    
+$font-Icon: "Icon";
+
+$font-logo: "ForestSmooth Bold", "ForestSmooth Regular", "ForestSmooth";
+
+$font-Arial: Arial, Helvetica, sans-serif
+
+$color-white: #ffffff
+
+$color-cream: #f1f1f1
+    
+$color-gray: #a8a8a8
+              
+$color-gray-a: #c9c9c9
+               
+$color-gray-b: #7f7f7f
+               
+$color-gray-c: #666565
+
+$color-gray-d: #545353
+ 
+$color-blue-a:  #3d7db8
+
+$color-black:  #000000
+
+$color-orange: #fb7d7d
+
+
+@mixin btn-Tag($w-Value, $display-Value)
+    position: absolute
+    cursor: pointer
+    display: inline-block
+    width: $w-Value
+    height: 2.5rem
+    color: $color-cream
+    background: $color-blue-a
+    font-family: $font-Arial
+    line-height: 180%
+    font-size: 1.4rem
+    border: none
+    text-align: center
+    border-radius: 2.5rem 2.5rem 0 0
+    outline: none
+    user-select: none
+    display: $display-Value
+
+    &:hover
+      background: $color-orange
+      color: $color-black
+      z-index: 2
+
+
+@mixin active($bG-Value, $z-Value)
+    color: $color-black
+    border: none
+    background-color: $bG-Value
+    z-index: $z-Value
+
+@mixin symbol-btn($fS-Value)
+    font-family: $font-Icon
+    font-size: $fS-Value
+    color: $color-gray-c
+    line-height: 0%
+    text-align: center
+    padding: 0rem
+    outline: none
+    cursor: pointer
+    position: absolute
+    
+    &:hover
+      border-color: $color-gray-c
+      border-width: .1rem
+
+
+
+
+
+    
+
+
+
+
+      
+
+
+    
+
+
+
+

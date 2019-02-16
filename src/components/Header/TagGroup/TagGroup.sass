@@ -1,0 +1,26 @@
+@import "./src/style"
+
+
+#tagGroup
+  position: relative
+  height: 2.5rem
+  left: 2rem
+  display: inline-block
+  #btn-TagForm
+    left: 0rem
+    z-index: 3
+  #btn-TagElement
+    left: 16rem
+    z-index: 2
+
+  #btn-TagStyle
+    left: 32rem
+    z-index: 1
+  .tag
+    filter: drop-shadow(.2rem .25rem .2rem $color-gray-a)
+    @include btn-Tag(17rem, inline-block)
+  
+  .active
+    @include active($color-cream, 0)
+     
+
